@@ -1,97 +1,123 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Contact Manager App
 
-# Getting Started
+## Overview
+A fully functional **React Native Contact Manager App** that allows users to:
+- View, search, add, edit, and delete contacts
+- Mark contacts as favorites
+- Access contact details with quick actions (call, message, edit, delete)
+- Enjoy a responsive and accessible interface
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+Built with **React Native**, **Context API**, and **AsyncStorage** for persistent data.
 
-## Step 1: Start Metro
+---
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## Features
+- **Contact List**
+  - Search by name, company, or email
+  - Sort by name, company, or recently added
+  - Favorites shown at the top
+- **Add/Edit Contact**
+  - Input validation for required fields
+  - Pre-fill data when editing
+- **Contact Details**
+  - View full contact information
+  - Buttons for call, SMS, edit, and delete
+- **Accessibility**
+  - Screen reader friendly
+  - Proper roles, labels, and hints
+- **Performance Optimizations**
+  - Memoized components
+  - FlatList optimizations (`getItemLayout`, `initialNumToRender`, `windowSize`)
+  - `useMemo` and `useCallback` for filtering and event handlers
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
 
-```sh
-# Using npm
-npm start
+## Installation
 
-# OR using Yarn
-yarn start
+### 1. Clone the repository
+```bash
+git clone https://github.com/1xProdifer/ContactManagerApp.git
+cd ContactManagerApp
 ```
 
-## Step 2: Build and run your app
-
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+### 2. Install dependencies
+```bash
+npm install
 ```
 
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+###3. Run the app
+```bash
+iOS (Mac required):
+npx react-native run-ios
+Android:
+npx react-native run-android
 ```
 
-Then, and every time you update your native dependencies, run:
+---
 
-```sh
-bundle exec pod install
-```
+## Project Structure
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+ContactManagerApp/
+├─ src/
+│ ├─ components/common/ # Reusable UI components
+│ ├─ screens/ # App screens (Add/Edit/List/Details)
+│ ├─ data/ # Sample contacts and helper functions
+│ ├─ utils/ # Context API and helper utilities
+│ └─ styles/ # Global styles
+├─ App.js # Main app entry
+├─ package.json
+└─ README.md
 
-```sh
-# Using npm
-npm run ios
+---
 
-# OR using Yarn
-yarn ios
-```
+## Usage
+### Viewing Contacts
+- Launch the app to see the contact list  
+- Use the **search bar** to filter by name, company, or email  
+- Contacts marked as favorites appear at the top  
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+### Adding a Contact
+- Tap the **Add** button (floating button)  
+- Fill in required fields (first name, last name, email, phone)  
+- Optional fields: company, notes  
+- Tap **Add Contact** to save  
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+### Editing a Contact
+- Tap a contact to open the **Details screen**  
+- Tap **Edit** to update contact information  
+- Fields will be pre-filled with current data  
+- Tap **Update Contact** to save changes  
 
-## Step 3: Modify your app
+### Deleting a Contact
+- Open the contact in **Details screen**  
+- Tap **Delete** to remove the contact permanently  
 
-Now that you have successfully run the app, let's make changes!
+### Favorites
+- Toggle the star icon directly in the contact list  
+- Favorite contacts will appear at the top  
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+---
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+## Accessibility
+- All buttons and inputs have `accessibilityLabel` and `accessibilityRole`  
+- Screen reader tested on Android emulator  
+- High contrast and readable fonts for better visibility  
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+---
 
-## Congratulations! :tada:
+## Contributing
+### Steps
+1. Fork the repository and create a new branch  
+2. Make changes and commit with descriptive messages  
+3. Open a pull request for review  
 
-You've successfully run and modified your React Native App. :partying_face:
+---
 
-### Now what?
+## License
+This project is licensed under the **MIT License**.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+---
 
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## Author
+**Adhyan Chandhoke**  
+[GitHub Profile](https://github.com/1xProdifer)
