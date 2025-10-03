@@ -45,28 +45,33 @@ cd ContactManagerApp
 npm install
 ```
 
-###3. Run the app
+### 3. Run the app
+
+- iOS (Mac required):
 ```bash
-iOS (Mac required):
 npx react-native run-ios
-Android:
+```
+- Android:
+```bash
 npx react-native run-android
 ```
 
 ---
 
+
 ## Project Structure
 
-ContactManagerApp/
-├─ src/
-│ ├─ components/common/ # Reusable UI components
-│ ├─ screens/ # App screens (Add/Edit/List/Details)
-│ ├─ data/ # Sample contacts and helper functions
-│ ├─ utils/ # Context API and helper utilities
-│ └─ styles/ # Global styles
-├─ App.js # Main app entry
-├─ package.json
-└─ README.md
+**ContactManagerApp/**
+├─ **src/**
+│  ├─ **components/common/** – Reusable UI components  
+│  ├─ **screens/** – App screens (Add, Edit, List, Details)  
+│  ├─ **data/** – Sample contacts and helper functions  
+│  ├─ **utils/** – Context API and utility functions  
+│  └─ **styles/** – Global styles  
+├─ `App.js` – Main app entry point  
+├─ `package.json` – Project dependencies and scripts  
+└─ `README.md` – Project documentation
+
 
 ---
 
