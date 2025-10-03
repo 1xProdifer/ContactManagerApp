@@ -32,15 +32,20 @@ Built with **React Native**, **Context API**, and **AsyncStorage** for persisten
 
 ---
 
-## Installation
+### Option 1: Clone the repository (recommended)
 
-### 1. Clone the repository
 ```bash
 git clone https://github.com/1xProdifer/ContactManagerApp.git
 cd ContactManagerApp
 ```
 
+### Option 2: Download ZIP
+
+- Click Code → Download ZIP on GitHub
+- Extract the ZIP and navigate into the folder
+  
 ### 2. Install dependencies
+
 ```bash
 npm install
 ```
@@ -99,23 +104,8 @@ npx react-native run-android
 
 ### Favorites
 - Toggle the star icon directly in the contact list  
-- Favorite contacts will appear at the top  
-
----
-
-## Accessibility
-- All buttons and inputs have `accessibilityLabel` and `accessibilityRole`  
-- Screen reader tested on Android emulator  
-- High contrast and readable fonts for better visibility  
-
----
-
-## Contributing
-### Steps
-1. Fork the repository and create a new branch  
-2. Make changes and commit with descriptive messages  
-3. Open a pull request for review  
-
+- Favorite contacts will appear at the top
+  
 ---
 
 ## License
